@@ -23,9 +23,9 @@ int comparar_timestamp(const void *a, const void *b)
     const leitura_t *leitura_b = (const leitura_t *)b;
 
     if (leitura_a->timestamp < leitura_b->timestamp)
-        return -1;
-    if (leitura_a->timestamp > leitura_b->timestamp)
         return 1;
+    if (leitura_a->timestamp > leitura_b->timestamp)
+        return -1;
     return 0;
 }
 
@@ -261,8 +261,6 @@ int processar_arquivo(const char *nome_arquivo)
 
 int main(int argc, char *argv[])
 {
-    printf("=== Sistema de Monitoramento de Sensores Industriais ===\n");
-    printf("Programa 1: Organizador de Dados\n\n");
 
     if (argc != 2)
     {

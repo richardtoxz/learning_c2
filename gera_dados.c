@@ -16,10 +16,10 @@ typedef struct {
 } sensor_config_t;
 
 tipo_sensor_t string_para_tipo(const char* tipo_str) {
-    if (strcmp(tipo_str, "int") == 0) return TIPO_INT;
-    if (strcmp(tipo_str, "float") == 0) return TIPO_FLOAT;
-    if (strcmp(tipo_str, "bool") == 0) return TIPO_BOOL;
-    if (strcmp(tipo_str, "string") == 0) return TIPO_STRING;
+    if (strcmp(tipo_str, "CONJ_Z") == 0) return TIPO_INT;
+    if (strcmp(tipo_str, "CONJ_Q") == 0) return TIPO_FLOAT;
+    if (strcmp(tipo_str, "BINARIO") == 0) return TIPO_BOOL;
+    if (strcmp(tipo_str, "TEXTO") == 0) return TIPO_STRING;
     
     return TIPO_INT;
 }
