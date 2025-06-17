@@ -104,7 +104,7 @@ leitura_t* busca_binaria_aproximada(leitura_t* vetor, int tamanho, long timestam
         
         if (timestamp_atual == timestamp_alvo) {
             break;
-        } else if (timestamp_atual < timestamp_alvo) {
+        } else if (timestamp_atual > timestamp_alvo) {
             esquerda = meio + 1;
         } else {
             direita = meio - 1;
