@@ -2,7 +2,7 @@
 
 **Disciplina:** Estruturas de Dados  
 **Curso:** Análise e Desenvolvimento de Sistemas  
-**Linguagem:** C
+**Linguagem:** C   
 **Professor:** Zoe Roberto
 
 ## Visão Geral
@@ -50,7 +50,7 @@ gcc gera_dados.c -o gera_dados
 
 1. **Gerar dados de teste**  
    ```bash
-   ./gera_dados 1640995200 1640999000 TEMP_01:float PRESS_02:int FLOW_03:bool
+   ./gera_dados 1640995200 1640999000 TEMP_01:CONJ_Q PRESS_02:CONJ_Z FLOW_03:BINARIO
    ```
    Isso produz `dados_gerados.txt` com leituras embaralhadas.
 
@@ -58,7 +58,7 @@ gcc gera_dados.c -o gera_dados
    ```bash
    ./organiza_sensores dados_gerados.txt
    ```
-   Gera arquivos como `TEMP_ordenado.txt`, `PRESS_ordenado.txt`, etc., cada um em ordem crescente de timestamp.
+   Gera arquivos como `TEMP_ordenado.txt`, `PRESS_ordenado.txt`, etc., cada um em ordem decrescente de timestamp.
 
 3. **Consultar um sensor**  
    ```bash
